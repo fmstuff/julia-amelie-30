@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Pacifico|Source+Sans+Pro:200,400");
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
 
 /*
 	Epilogue by TEMPLATED
@@ -1077,6 +1078,10 @@
 			overflow: hidden;
 		}
 
+		.item .high {
+			height: 25em;
+		}
+
 			.item header input, .item header select, .item header textarea {
 				color: #ffffff;
 			}
@@ -1292,7 +1297,7 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/juli_amelie_blur.jpg");
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
@@ -1377,7 +1382,7 @@
 				padding: 0 0.5em 0.25em 0.5em;
 				border-bottom: solid 2px #ffffff;
 				font-weight: 200;
-				font-family: "Pacifico", cursive;
+				font-family: "Amatic SC";
 				text-transform: none;
 				letter-spacing: 0;
 			}
