@@ -5,13 +5,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-    
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <script>
       window.onload = function() {
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
         const bdayDate = new Date("2020-06-13");
         const today = new Date();
-        const diffDays = Math.round(Math.abs((bdayDate - today) / oneDay));
+        const diffDays = Math.round((bdayDate - today) / oneDay);
 
         if (diffDays < -1) {
           document.getElementById("countdown").innerHTML = `Schön war's vor ${diffDays} Tagen`;
@@ -85,7 +86,11 @@
 								<a href="https://www.birdie-bar.de/" target="_blank"><img src="images/birdie.jpg" alt="" /></a>
 								<h3>Location - Birdie</h3>
 							</header>
-							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
+							<p>
+								Wir feiern in der "Birdie Bar" - einer Eventlocation mitten in München, zentral
+								gelegen an der Infanteriestraße nahe Maxvorstadt. 
+								Das Birdie bietet einen Innebereich mit Bar und einen Garten mit Außenbar.
+							</p>
 							<ul class="actions">
 								<li>
 									<a href="https://www.birdie-bar.de/" target="_blank" class="button">
