@@ -5,6 +5,27 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    
+    <script>
+      window.onload = function() {
+        const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        const bdayDate = new Date("2020-06-13");
+        const today = new Date();
+        const diffDays = Math.round(Math.abs((bdayDate - today) / oneDay));
+
+        if (diffDays < -1) {
+          document.getElementById("countdown").innerHTML = `Schön war's vor ${diffDays} Tagen`;
+        } else if (diffDays === -1) {
+          document.getElementById("countdown").innerHTML = `Schön war's gestern :-)`;
+        } else if (diffDays === 0){
+          document.getElementById("countdown").innerHTML = `Heute ist's soweit!`;
+        } else if (diffDays === 1) {
+          document.getElementById("countdown").innerHTML = `Noch ${diffDays} Tag`;
+        }else {
+          document.getElementById("countdown").innerHTML = `Noch ${diffDays} Tage`;
+        }
+      };
+    </script>
 	</head>
 	<body>
 
@@ -13,8 +34,7 @@
 				<div class="inner">
 					<h1>30 Jahre - Amelie & Julia</h1>
 					<p>
-						Hier findest du alle Infos rund um die große Sause zu Amelies und Julias gemeinsamer 
-						Geburtatagsfeier.
+						Hier findest du alle Infos rund um unsere gemeinsame Geburtstagsfeier.
 					</p>
 				</div>
 			</header>
@@ -32,9 +52,11 @@
 
 				<!-- Items -->
 					<section class="main items">
+            
+            <!-- WUNSCHKONZERT -->
 						<article class="item">
 							<header class="high">
-								<a href="#"><img src="images/juli_amelie_face2face.jpg" alt="" /></a>
+								<a><img src="images/juli_amelie_face2face.jpg" alt="" /></a>
 								<h3>Wunschkonzert</h3>
 							</header>
 							<p>
@@ -44,9 +66,10 @@
 							</p>
 						</article>
 
+            <!-- DRESSCODE -->
 						<article class="item">
 							<header class="high">
-								<a href="#"><img src="images/dresscode.jpeg" alt="" /></a>
+								<a><img src="images/dresscode.jpeg" alt="" /></a>
 								<h3>Dresscode</h3>
 							</header>
 							<p>
@@ -59,7 +82,7 @@
 						<!-- LOCATION -->
 						<article class="item">
 							<header>
-								<a href="#"><img src="images/birdie.jpg" alt="" /></a>
+								<a href="https://www.birdie-bar.de/" target="_blank"><img src="images/birdie.jpg" alt="" /></a>
 								<h3>Location - Birdie</h3>
 							</header>
 							<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
@@ -75,7 +98,9 @@
 						<!-- ANFAHRT -->
 						<article class="item">
 							<header>
-								<a href="#"><img src="images/directions.jpg" alt="" /></a>
+								<a href="https://goo.gl/maps/Ro1SULtMd3EVLDvn8" target="_blank">
+                  <img src="images/directions.jpg" alt="" />
+                </a>
 								<h3>Anfahrt</h3>
 							</header>
 							<p>
@@ -95,10 +120,11 @@
 
 				<!-- CTA -->
 					<section id="cta" class="main special">
-						<h2>Etiam veroeros lorem</h2>
-						<p>Phasellus ac augue ac magna auctor tempus proin<br />
-						accumsan lacus a nibh commodo in pellentesque dui<br />
-						in hac habitasse platea dictumst.</p>
+						<h2 id="countdown"></h2>
+						<p>
+              Wir leben für die Nächte an die sich keiner erinnert,
+              mit den Menschen, die wir nie vergessen werden!
+            </p>
 					</section>
 
 				<!-- Main -->
@@ -123,6 +149,5 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
