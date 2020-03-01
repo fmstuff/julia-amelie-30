@@ -15,14 +15,14 @@
         const diffDays = Math.round((bdayDate - today) / oneDay);
 
         if (diffDays < -1) {
-          document.getElementById("countdown").innerHTML = `Schön war's vor ${diffDays} Tagen`;
+          document.getElementById("countdown").innerHTML = `Schön war's vor ${Math.abs(diffDays)} Tagen`;
         } else if (diffDays === -1) {
           document.getElementById("countdown").innerHTML = `Schön war's gestern :-)`;
         } else if (diffDays === 0){
           document.getElementById("countdown").innerHTML = `Heute ist's soweit!`;
         } else if (diffDays === 1) {
           document.getElementById("countdown").innerHTML = `Noch ${diffDays} Tag`;
-        }else {
+        } else {
           document.getElementById("countdown").innerHTML = `Noch ${diffDays} Tage`;
         }
       };
