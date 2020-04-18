@@ -1082,6 +1082,10 @@
 			height: 25em;
 		}
 
+		.item .medium {
+			height: 20em;
+		}
+
 			.item header input, .item header select, .item header textarea {
 				color: #ffffff;
 			}
