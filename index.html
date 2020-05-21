@@ -10,12 +10,16 @@
     <script>
       window.onload = function() {
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-        const bdayDate = new Date("2020-06-13");
-        const today = new Date();
-        const diffDays = Math.round((bdayDate - today) / oneDay);
+        const bdayDate = new Date("2020-06-13 00:00:00");
+				const today = new Date();
+				today.setHours(0);
+				today.setMinutes(0);
+				today.setSeconds(0);
+				
+				const diffDays = Math.round((bdayDate - today) / oneDay);
 
         if (diffDays < -1) {
-          document.getElementById("countdown").innerHTML = `Schön war's vor ${Math.abs(diffDays)} Tagen`;
+          document.getElementById("countdown").innerHTML = `Schön war's :-)`;
         } else if (diffDays === -1) {
           document.getElementById("countdown").innerHTML = `Schön war's gestern :-)`;
         } else if (diffDays === 0){
