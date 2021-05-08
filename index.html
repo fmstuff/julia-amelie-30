@@ -1,149 +1,167 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Juli & Amelie | 30</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <title>Juli & Amelie | 30</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
     <script>
-      window.onload = function() {
+      window.onload = function () {
         const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
-        const bdayDate = new Date("2020-10-17");
-				bdayDate.setHours(0);
-				bdayDate.setMinutes(0);
-				bdayDate.setSeconds(0);
-				const today = new Date();
-				today.setHours(0);
-				today.setMinutes(0);
-				today.setSeconds(0);
+        const bdayDate = new Date("2021-07-02");
+        bdayDate.setHours(0);
+        bdayDate.setMinutes(0);
+        bdayDate.setSeconds(0);
+        const today = new Date();
+        today.setHours(0);
+        today.setMinutes(0);
+        today.setSeconds(0);
 
-				const diffDays = Math.round((bdayDate - today) / oneDay);
+        const diffDays = Math.round((bdayDate - today) / oneDay);
 
         if (diffDays < -1) {
           document.getElementById("countdown").innerHTML = `Schön war's :-)`;
         } else if (diffDays === -1) {
-          document.getElementById("countdown").innerHTML = `Schön war's gestern :-)`;
-        } else if (diffDays === 0){
-          document.getElementById("countdown").innerHTML = `Heute ist's soweit!`;
+          document.getElementById(
+            "countdown"
+          ).innerHTML = `Schön war's gestern :-)`;
+        } else if (diffDays === 0) {
+          document.getElementById(
+            "countdown"
+          ).innerHTML = `Heute ist's soweit!`;
         } else if (diffDays === 1) {
-          document.getElementById("countdown").innerHTML = `Noch ${diffDays} Tag`;
+          document.getElementById(
+            "countdown"
+          ).innerHTML = `Noch ${diffDays} Tag`;
         } else {
-          document.getElementById("countdown").innerHTML = `Noch ${diffDays} Tage`;
+          document.getElementById(
+            "countdown"
+          ).innerHTML = `Noch ${diffDays} Tage`;
         }
       };
     </script>
-	</head>
-	<body>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <div class="inner">
+        <h1>30 Jahre - Juli & Amelie</h1>
+        <p>
+          Hier findest du alle Infos rund um unsere gemeinsame Geburtstagsfeier.
+        </p>
+      </div>
+    </header>
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="inner">
-					<h1>30 Jahre - Juli & Amelie</h1>
-					<p>
-						Hier findest du alle Infos rund um unsere gemeinsame Geburtstagsfeier.
-					</p>
-				</div>
-			</header>
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Banner -->
+      <section id="intro" class="main">
+        <h2>Wir freuen uns auf euch!</h2>
+        <p>02.07.2021 - ab 19 Uhr</p>
+        <p>Erscheint zahlreich - Seid gut drauf - Tanzt und feiert mit uns</p>
+      </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <!-- Items -->
+      <section class="main items">
+        <!-- WUNSCHKONZERT -->
+        <article class="item">
+          <header class="high">
+            <a><img src="images/juli_amelie_face2face.jpg" alt="" /></a>
+            <h3>Wunschkonzert</h3>
+          </header>
+          <p>
+            Das Leben ist zwar kein Wunschkonzert - aber haben wir nicht alle
+            große Pläne?
+            <br />
+            Wir freuen uns ganz besonders über einen Beitrag zur Party- &
+            Reisekasse. Über jede andere Überraschung aber natürlich auch :)
+          </p>
+        </article>
 
-				<!-- Banner -->
-					<section id="intro" class="main">
-						<h2>Wir freuen uns auf euch!</h2>
-						<p>
-							17.10.2020 - ab 19 Uhr
-						</p>
-						<p>Erscheint zahlreich - Seid gut drauf - Tanzt und feiert mit uns</p>
-					</section>
+        <!-- DRESSCODE -->
+        <article class="item">
+          <header class="high">
+            <a><img src="images/dresscode.jpeg" alt="" /></a>
+            <h3>Dresscode</h3>
+          </header>
+          <p>
+            Seid einfach ihr selbst - das Wichtigste ist, dass ihr euch
+            wohlfühlt!
+            <br />
+            Und denkt dran: wir feiern sowohl drinnen als auch draußen.
+          </p>
+        </article>
 
-				<!-- Items -->
-					<section class="main items">
-            
-            <!-- WUNSCHKONZERT -->
-						<article class="item">
-							<header class="high">
-								<a><img src="images/juli_amelie_face2face.jpg" alt="" /></a>
-								<h3>Wunschkonzert</h3>
-							</header>
-							<p>
-								Das Leben ist zwar kein Wunschkonzert - aber haben wir nicht alle große Pläne?
-								<br>
-								Wir freuen uns ganz besonders über einen Beitrag zur Party- & Reisekasse.
-								Über jede andere Überraschung aber natürlich auch :)
-							</p>
-						</article>
+        <!-- LOCATION -->
+        <article class="item">
+          <header class="medium">
+            <a href="https://www.birdie-bar.de/" target="_blank"
+              ><img src="images/birdie.jpg" alt=""
+            /></a>
+            <h3>Location - Birdie</h3>
+          </header>
+          <p>
+            Wir feiern in der "Birdie Bar" - mitten in München, zentral gelegen
+            an der Infanteriestraße nahe Maxvorstadt.
+            <br /><br />
+            Das Birdie bietet einen Innebereich mit Bar und einen Garten mit
+            Außenbar.
+          </p>
+          <ul class="actions">
+            <li>
+              <a
+                href="https://www.birdie-bar.de/"
+                target="_blank"
+                class="button"
+              >
+                Birdie Website
+              </a>
+            </li>
+          </ul>
+        </article>
 
-            <!-- DRESSCODE -->
-						<article class="item">
-							<header class="high">
-								<a><img src="images/dresscode.jpeg" alt="" /></a>
-								<h3>Dresscode</h3>
-							</header>
-							<p>
-								Seid einfach ihr selbst - das Wichtigste ist, dass ihr euch wohlfühlt!
-								<br>
-								Und denkt dran: wir feiern sowohl drinnen als auch draußen.
-							</p>
-						</article>
+        <!-- ANFAHRT -->
+        <article class="item">
+          <header class="medium">
+            <a href="https://goo.gl/maps/Ro1SULtMd3EVLDvn8" target="_blank">
+              <img src="images/directions.jpg" alt="" />
+            </a>
+            <h3>Anreise</h3>
+          </header>
+          <p>
+            Das Birdie erreicht ihr ganz einfach mit den Öffentlichen, z.B. vom
+            Stachus mit der Tram 27 bis Nordbad oder der Tram 21 bis
+            Lothstraße.<br />
+            Falls ihr mit dem Auto kommt, gibt's auch zahlreiche Parkplätze beim
+            Birdie.
+          </p>
+          <ul class="actions">
+            <li>
+              <a
+                href="https://goo.gl/maps/Ro1SULtMd3EVLDvn8"
+                target="_blank"
+                class="button"
+              >
+                Google Maps
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
 
-						<!-- LOCATION -->
-						<article class="item">
-							<header class="medium">
-								<a href="https://www.birdie-bar.de/" target="_blank"><img src="images/birdie.jpg" alt="" /></a>
-								<h3>Location - Birdie</h3>
-							</header>
-							<p>
-								Wir feiern in der "Birdie Bar" - mitten in München, zentral gelegen an der
-								Infanteriestraße nahe Maxvorstadt.
-								<br><br>
-								Das Birdie bietet einen Innebereich mit Bar und einen Garten mit Außenbar.
-							</p>
-							<ul class="actions">
-								<li>
-									<a href="https://www.birdie-bar.de/" target="_blank" class="button">
-										Birdie Website
-									</a>
-								</li>
-							</ul>
-						</article>
+      <!-- CTA -->
+      <section id="cta" class="main special">
+        <h2 id="countdown"></h2>
+        <p>
+          Wir leben für die Nächte an die sich keiner erinnert, mit den
+          Menschen, die wir nie vergessen werden!
+        </p>
+      </section>
 
-						<!-- ANFAHRT -->
-						<article class="item">
-							<header class="medium">
-								<a href="https://goo.gl/maps/Ro1SULtMd3EVLDvn8" target="_blank">
-                  <img src="images/directions.jpg" alt="" />
-                </a>
-								<h3>Anreise</h3>
-							</header>
-							<p>
-								Das Birdie erreicht ihr ganz einfach mit den Öffentlichen, z.B. vom Stachus mit der
-								Tram 27 bis Nordbad oder der Tram 21 bis Lothstraße.<br>
-								Falls ihr mit dem Auto kommt, gibt's auch zahlreiche Parkplätze beim Birdie.
-							</p>
-							<ul class="actions">
-								<li>
-									<a href="https://goo.gl/maps/Ro1SULtMd3EVLDvn8" target="_blank" class="button">
-										Google Maps
-									</a>
-								</li>
-							</ul>
-						</article>
-					</section>
-
-				<!-- CTA -->
-					<section id="cta" class="main special">
-						<h2 id="countdown"></h2>
-						<p>
-              Wir leben für die Nächte an die sich keiner erinnert,
-              mit den Menschen, die wir nie vergessen werden!
-            </p>
-					</section>
-
-				<!-- Main -->
-				<!--
+      <!-- Main -->
+      <!--
 					<section id="main" class="main">
 						<header>
 							<h2>Lorem ipsum dolor</h2>
@@ -152,20 +170,19 @@
 					</section>
 				-->
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">
-							&copy; Schnubbi. Design: <a href="https://templated.co">TEMPLATED</a>.
-							Images: <a href="https://unsplash.com">Unsplash</a>.
-						</p>
-					</footer>
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Schnubbi. Design: <a href="https://templated.co">TEMPLATED</a>.
+          Images: <a href="https://unsplash.com">Unsplash</a>.
+        </p>
+      </footer>
+    </div>
 
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
